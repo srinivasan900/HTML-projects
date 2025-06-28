@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>job</title>
+        <style>
+            body{
+                background-color: aquamarine;
+                
+            }
+            h1{
+                text-align: center;
+                color: rgb(255, 0, 0,0.7);
+            }
+            label{
+                background-color: rgb(243, 231, 214);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JOB APPLICATION FORM</h1>
+        <form>
+        <label for="Text">Full Name:*</label><br>
+        <input type="text"id="Name"Name="FullName" required><br><br>
+        <label for="Text">Email Address:*</label><br>
+        <input type="text"id="Email"Name="Email Address" required><br><br>
+        <label for="Text">Phone Number:*</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+91" pattern="[0-9] {10}" required><br><br>
+        <label for="Text">Date of Birth</label><br>
+        <input type="date"id="date" name="date"min="1990-01-01" max="2005-05-25"><br><br>
+        <legend>Gender:</legend>
+         <input type="radio"id="Male"name="gender"value="male">
+          <label for="male">male</label><br>
+          <input type="radio"id="female"name="gender"value="female">
+          <label for="female">female</label><br>
+          <legend>Skills</legend>
+          <input type="checkbox"id="Html"name="Skills"value="Html">
+          <label for="Html">Html</label>
+          <input type="checkbox"id="CSS"name="Skills"value="CSS">
+          <label for="CSS">CSS</label>
+          <input type="checkbox"id="Javascript"name="Skills"value="Javascript">
+          <label for="Javascript">Javascript</label>
+          <input type="checkbox"id="Python"name="Skills"value="Python">
+          <label for="Python">Python</label>
+          <input type="checkbox"id="SQL"name="Skills"value="SQL">
+          <label for="SQL">SQL</label><br><br>
+          <div>
+           <label for="Experience level">Experience Level</label>
+        <input list="Experience Level"><br>
+        <datalist id="Experience Level">
+             <option value="Fresher">Fresher</option>
+            <option value="1-2years">1-2years</option>
+            <option value="3-5years">3-5years</option>
+            <option value="5+years">5+years</option>
+        </datalist>
+        </datalist><br><br>
+        <label for="file">Resume Upload (PDF or doc only)*</label><br><br>
+          <input type="file"id="file"name="file"><br><br>
+           <label for="comments">comments/message:</label><br>
+          <textarea id="comments"name="comments"></textarea><br>
+          <input type="submit"id="submit"name="submit">
+          <input type="reset"id="reset"name="reset">
+        </form>
+    </body>
+</html>
